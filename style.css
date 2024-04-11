@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-row{
+    margin-top: 100px !important;
+}
+.card{
+    background: #fff !important;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px !important;
+    border: none !important;
+    cursor: pointer;
+}
+.card-img-top{
+    /* border-radius: 50%; */
+    height: auto !important; 
+    max-width: 150px !important; 
+    position: relative;
+    margin: auto;
+    top: -60px;
+    object-fit: cover;
+    transition: border-radius 0.3s;
+    border-top-left-radius: 0px !important;
+}
+.card-body{
+    margin-top: -40px !important;
+}
+
+.card:hover .card-img-top {
+    border-radius: 20%; /* Change border radius on hover */
+    border: 2px solid #1877F2; /* Blue border color */
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        margin-top: 68px !important;
+    }
+  }
